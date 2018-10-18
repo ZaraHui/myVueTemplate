@@ -7,8 +7,8 @@
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
-    "test": "node build/test.js",
-    "preview": "node build/preview.js",
+    "intest": "node build/intest.js",
+    "prev": "node build/prev.js",
     "build": "node build/build.js"
   },
   "dependencies": {

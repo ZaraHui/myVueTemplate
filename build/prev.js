@@ -1,7 +1,7 @@
 'use strict'
 require('./check-versions')()
 
-process.env.NODE_ENV = 'preview'
+process.env.NODE_ENV = 'prev'
 
 const ora = require('ora')
 const rm = require('rimraf')
@@ -9,9 +9,9 @@ const path = require('path')
 const chalk = require('chalk')
 const webpack = require('webpack')
 const config = require('../config')
-const webpackConfig = require('./webpack.preview.conf')
+const webpackConfig = require('./webpack.prev.conf')
 
-const spinner = ora('building for preview...')
+const spinner = ora('building for prev...')
 spinner.start()
 
 rm(path.join(config.build.assetsRoot, config.build.assetsSubDirectory), err => {

@@ -37,8 +37,8 @@ module.exports = {
         cssSourceMap: true
     },
 
-    // 测试环境配置
-    test: {
+    // 内测环境配置
+    intest: {
         // Template for index.html
         index: path.resolve(__dirname, '../dist/index.html'),
 
@@ -70,7 +70,7 @@ module.exports = {
     },
 
     // 预发环境配置
-    preview: {
+    prev: {
         // Template for index.html
         index: path.resolve(__dirname, '../dist/index.html'),
 
