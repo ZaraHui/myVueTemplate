@@ -14,6 +14,10 @@
     }
 </script>
 
-<style scoped>
+<style lang="scss" scoped type="text/css">
+    @import '../common/style/color.scss';
 
+    h1 {
+        color: $text-high-color;
+    }
 </style>
