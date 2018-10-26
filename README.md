@@ -14,7 +14,7 @@ npm run dev
 # 内测环境
 npm run intest
 
-# 预测环境
+# 预发环境
 npm run prev
 
 # 生产环境
