@@ -5,7 +5,7 @@
 ## Build Setup
 
 ``` bash
-# install dependencies
+# 安装依赖项
 npm install
 
 # 本地服务
