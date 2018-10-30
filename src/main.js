@@ -6,8 +6,8 @@ import router from './router';
 import axios from 'axios';
 
 // 引入全局样式文件
-import 'src/common/style/reset.scss';
-import 'src/common/style/base.scss';
+import 'common/stylus/reset.styl';
+import 'common/stylus/base.styl';
 
 // axios基础参数配置
 var Axios = axios.create({

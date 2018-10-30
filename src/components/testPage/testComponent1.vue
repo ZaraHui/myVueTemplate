@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <h1>This is homeComponent1</h1>
+        <h1>This is testComponent1</h1>
         <div>
             <p class="title">1. 使用rem布局</p>
             <div class="wrap">
@@ -14,29 +14,26 @@
     export default {}
 </script>
 
-<style lang="scss" scoped type="text/css">
-    @import '../../common/style/color.scss';
+<style lang="stylus" scoped type="text/css">
+    @import '~common/stylus/index.styl'
 
-    .container {
-        h1 {
+    .container
+        h1
             color: $text-base-color;
             font-size: 50px; /*no*/
-        }
 
-        p {
+        p
             text-align: left;
             margin: 20px 16px; /*px自动转化成rem，如不使用rem，在样式后加 \/*no*\/ 即可*/
             font-size: 28px; /*no*/
-        }
 
-        .wrap {
+        .wrap
             position: relative;
             width: 100%;
             height: 300px;
-            background: $high-color;
-        }
+            background:$high-color;
 
-        .box {
+        .box
             position: absolute;
             left: 50%;
             top: 50%;
@@ -46,6 +43,4 @@
             border-radius: 50%;
             margin-top: -100px;
             margin-left: -100px;
-        }
-    }
 </style>
