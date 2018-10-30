@@ -1,23 +1,15 @@
 <template>
-    <div>
-        <h1>{{ msg }}</h1>
+    <div id="home">
+        <router-view></router-view>
     </div>
 </template>
 
 <script>
     export default {
-        data () {
-            return {
-                msg: 'This is home page'
-            }
-        }
+        name: 'account'
     }
 </script>
 
-<style lang="scss" scoped type="text/css">
-    @import '../common/style/color.scss';
+<style>
 
-    h1 {
-        color: $text-high-color;
-    }
 </style>

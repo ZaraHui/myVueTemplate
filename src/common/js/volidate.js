@@ -2,9 +2,6 @@
 
 /*
  *isNull 判断一个值是否为空；
- *isTelephone 判断手机号码格式；
- *isRealName 判断姓名格式；
- *isAge 判断年龄格式；
  */
 
 /*
