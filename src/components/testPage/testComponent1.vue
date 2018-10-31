@@ -19,28 +19,28 @@
 
     .container
         h1
-            color: $text-base-color;
-            font-size: 50px; /*no*/
+            color $text-base-color
+            font-size 50px; /*no*/
 
         p
-            text-align: left;
-            margin: 20px 16px; /*px自动转化成rem，如不使用rem，在样式后加 \/*no*\/ 即可*/
-            font-size: 28px; /*no*/
+            text-align left
+            margin 20px 16px // px自动转化成rem，单独样式无需转换可以使用Px、PX或/* no */注释
+            font-size 28PX // 不转化
 
         .wrap
-            position: relative;
-            width: 100%;
-            height: 300px;
-            background:$high-color;
+            position relative
+            width 100%
+            height 300px
+            background $high-color
 
         .box
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            width: 200px;
-            height: 200px;
-            background: #FFFFFF;
-            border-radius: 50%;
-            margin-top: -100px;
-            margin-left: -100px;
+            position absolute
+            left 50%
+            top 50%
+            width 200px
+            height 200px
+            background #FFFFFF
+            border-radius 50%
+            margin-top -100px
+            margin-left -100px
 </style>

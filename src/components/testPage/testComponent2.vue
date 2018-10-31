@@ -15,6 +15,6 @@
 
     .container
         h1
-            color: $text-high-color;
-            font-size: 50px; /*no*/
+            color $text-high-color
+            font-size 50PX
 </style>
