@@ -10,7 +10,7 @@
     export default {}
 </script>
 
-<style lang="stylus" scoped type="text/css">
+<style lang="stylus" scoped type="text/stylus">
     @import '~common/stylus/index.styl';
 
     .container
