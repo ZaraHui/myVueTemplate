@@ -14,7 +14,7 @@ const webpackConfig = require('./webpack.prev.conf')
 const spinner = ora('building for prev...')
 spinner.start()
 
-rm(path.join(config.build.assetsRoot, config.build.assetsSubDirectory), err => {
+rm(path.join(config.prev.assetsRoot, config.prev.assetsSubDirectory), err => {
     if (err) throw err
     webpack(webpackConfig, (err, stats) => {
         spinner.stop()
@@ -34,6 +34,7 @@ rm(path.join(config.build.assetsRoot, config.build.assetsSubDirectory), err => {
 
         console.log(chalk.cyan('  Build complete.\n'))
         console.log(chalk.yellow(
+            '  Environment: prev.\n' +
             '  Tip: built files are meant to be served over an HTTP server.\n' +
             '  Opening index.html over file:// won\'t work.\n'
         ))
