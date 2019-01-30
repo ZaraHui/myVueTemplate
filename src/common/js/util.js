@@ -27,3 +27,4 @@ const getUrlPramas = (url) => {
 
 export default {
     getUrlPramas
+}
