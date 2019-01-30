@@ -1,25 +1,29 @@
 /*公用工具函数文件*/
 
 /*
- *getUrlPramas 获取地址拦指定参数的值；
-*/
+ *getUrlPramas 获取地址拦参数集；
+ */
 
-/*getUrlPramas 获取地址拦指定参数的值；
-* @param url url地址
-* @param name 参数名称
-* @return 参数值
-* */
+/*getUrlPramas 获取地址拦参数集；
+ * @param url url地址 默认值 window.location.href
+ * @return object 参数集对象
+ * */
 //
-const getUrlPramas = (url, name) => {
-    let reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
-    let r = url.match(reg);
-    if (r != null) {
-        return unescape(r[2]);
-    } else {
-        return null;
+const getUrlPramas = (url) => {
+    var url = url || window.location.href;
+    var obj = {};
+    var reg = /[?&][^?&]+=[^?&]+/g;
+    var arr = url.match(reg);
+    if (arr) {
+        arr.forEach(function (item) {
+            var tempArr = item.substring(1).split('=');
+            var key = decodeURIComponent(tempArr[0]);
+            var val = decodeURIComponent(tempArr[1]);
+            obj[key] = val;
+        })
     }
+    return obj;
 }
 
 export default {
     getUrlPramas
-}
