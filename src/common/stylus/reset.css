@@ -76,7 +76,7 @@ a, a:link, a:visited, a:hover, a:active {
 
 a {
     cursor: pointer;
-    color: inherit !important;
+    color: inherit;
 }
 
 /*移动端reset样式*/
